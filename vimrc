@@ -6,6 +6,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'python-rope/ropevim'
 Plugin 'mgedmin/pythonhelper.vim'
 call vundle#end()
 filetype plugin indent on
@@ -22,9 +23,15 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_enable_python_checker = 1
 
+let mapleader = '\'
 map <leader>l :set list!<CR>
+map <leader>s :SyntasticToggleMode<CR>
+map <leader>b oimport ipdb; ipdb.set_trace()<esc>
+map <leader>B Oimport ipdb; ipdb.set_trace()<esc>
 set list
 set listchars=tab:>-,trail:~
+
+set colorcolumn=80
 
 set laststatus=2
 set cursorline
