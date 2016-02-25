@@ -9,6 +9,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'python-rope/ropevim'
 Plugin 'mgedmin/pythonhelper.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -23,6 +24,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_enable_python_checker = 1
+
+let g:ctrlp_cmd = 'CtrlPMixed'
 
 let mapleader = '\'
 map <leader>l :set list!<CR>
