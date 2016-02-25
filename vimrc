@@ -31,6 +31,7 @@ let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_enable_python_checker = 1
 
 let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_working_path_mode = 0
 
 let mapleader = '\'
 map <leader>l :set list!<CR>
