@@ -3,5 +3,14 @@
 	email = pawel.fertyk@gmail.com
 [push]
 	default = current
+[credential]
+	helper = cache
 [diff]
 	tool = meld
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
