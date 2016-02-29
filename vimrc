@@ -34,8 +34,8 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 0
 
 let mapleader = '\'
-map <leader>l :set list!<CR>
-map <leader>s :SyntasticToggleMode<CR>
+map <leader>l :set list!<cr>
+map <leader>s :SyntasticToggleMode<cr>
 map <leader>b oimport ipdb; ipdb.set_trace()<esc>
 map <leader>B Oimport ipdb; ipdb.set_trace()<esc>
 set list
@@ -62,12 +62,11 @@ set shortmess+=I
 
 command! XmlPrettyPrint :%!xmllint --format -
 command! JsonPrettyPrint :%!python -m json.tool
+command! Bd :bp<bar>bd#
 
 set directory^=$HOME/.vim/swp//
 set viminfo^=%
 set hidden
-"set sessionoptions=buffers
-"au VimEnter * bw 1
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
