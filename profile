@@ -34,4 +34,17 @@ xmodmap -e "keysym h = h H Left"
 xmodmap -e "keysym j = j J Down"
 xmodmap -e "keysym k = k K Up"
 
+xmodmap -e "keysym 1 = 1 exclam F1"
+xmodmap -e "keysym 2 = 2 at F2"
+xmodmap -e "keysym 3 = 3 numbersign F3"
+xmodmap -e "keysym 4 = 4 dollar F4"
+xmodmap -e "keysym 5 = 5 percent F5"
+xmodmap -e "keysym 6 = 6 asciicircum F6"
+xmodmap -e "keysym 7 = 7 ampersand F7"
+xmodmap -e "keysym 8 = 8 asterisk F8"
+xmodmap -e "keysym 9 = 9 parenleft F9"
+xmodmap -e "keysym 0 = 0 parenright F10"
+xmodmap -e "keysym minus = minus underscore F11"
+xmodmap -e "keysym equal = equal plus F12"
+
 xbindkeys &
