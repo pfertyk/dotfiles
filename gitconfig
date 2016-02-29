@@ -1,0 +1,7 @@
+[user]
+	name = Paweł Fertyk
+	email = pawel.fertyk@gmail.com
+[push]
+	default = current
+[diff]
+	tool = meld

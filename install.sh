@@ -1,7 +1,8 @@
 #!/bin/bash
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files="bashrc vimrc vim profile git-prompt.sh local/share/xfce4 config/xfce4/terminal config/quicktile.cfg"
+files="gitconfig bashrc vimrc vim profile git-prompt.sh 
+local/share/xfce4 config/xfce4/terminal config/quicktile.cfg"
 
 echo "Creating $olddir for backup of any existing dotfiles in ~ ..."
 mkdir $olddir
