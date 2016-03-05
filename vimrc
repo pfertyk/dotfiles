@@ -27,7 +27,7 @@ set sessionoptions=blank,buffers,curdir,resize,winpos,winsize
 "let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_checkers = ['pyflakes3']
 let g:syntastic_enable_python_checker = 1
 
 let g:ctrlp_cmd = 'CtrlPMixed'
