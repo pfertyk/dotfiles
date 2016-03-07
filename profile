@@ -30,9 +30,19 @@ xmodmap -e "keycode 0x42 = Mode_switch"
 # xmodmap -e "keycode 0x7f = Mode_switch"
 # xmodmap -e "keycode 0x76 = BackSpace"
 xmodmap -e "keysym l = l L Right Right lstroke Lstroke"
-xmodmap -e "keysym h = h H Left"
-xmodmap -e "keysym j = j J Down"
-xmodmap -e "keysym k = k K Up"
+xmodmap -e "keysym h = h H Left Left"
+xmodmap -e "keysym j = j J Down Down"
+xmodmap -e "keysym k = k K Up Up"
+
+xmodmap -e "keysym n = n N Delete Delete nacute Nacute"
+xmodmap -e "keysym m = m M BackSpace BackSpace"
+
+xmodmap -e "keysym y = y Y Escape Escape Escape Escape"
+
+xmodmap -e "keysym u = u U Prior Prior Prior Prior"
+xmodmap -e "keysym i = i I Next Next Next Next"
+xmodmap -e "keysym o = o O Home Home oacute Oacute"
+xmodmap -e "keysym p = p P End End End End"
 
 xmodmap -e "keysym 1 = 1 exclam F1"
 xmodmap -e "keysym 2 = 2 at F2"
