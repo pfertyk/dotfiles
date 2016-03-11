@@ -118,3 +118,4 @@ if ! shopt -oq posix; then
 fi
 
 export TERM=xterm-256color
+set -o vi
