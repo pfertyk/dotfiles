@@ -35,7 +35,7 @@ xmodmap -e "keysym j = j J Down Down"
 xmodmap -e "keysym k = k K Up Up"
 
 xmodmap -e "keysym n = n N Delete Delete nacute Nacute"
-xmodmap -e "keysym m = m M BackSpace BackSpace"
+xmodmap -e "keysym m = m M BackSpace BackSpace m M"
 
 xmodmap -e "keysym y = y Y Escape Escape Escape Escape"
 

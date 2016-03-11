@@ -32,6 +32,7 @@ let g:syntastic_enable_python_checker = 1
 
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 0
+map <c-k> :CtrlPLine<cr>
 
 let mapleader = '\'
 map <leader>l :set list!<cr>
