@@ -10,6 +10,7 @@ Plugin 'python-rope/ropevim'
 Plugin 'mgedmin/pythonhelper.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'fisadev/vim-isort'
 call vundle#end()
 filetype plugin indent on
 
