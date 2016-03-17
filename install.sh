@@ -2,7 +2,8 @@
 dir=$PWD
 bck_dir="dotfiles_bck_$(date +%Y_%m_%d)"
 files="gitconfig bashrc vimrc vim profile git-prompt.sh inputrc
-local/share/xfce4 config/xfce4/terminal config/quicktile.cfg"
+local/share/xfce4 config/xfce4/terminal config/quicktile.cfg
+config/xfce4/xfconf"
 
 echo "Creating $bck_dir for backup of any existing dotfiles"
 rm -rf ~/$bck_dir
