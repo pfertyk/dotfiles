@@ -62,6 +62,7 @@
         <value type="string" value="seafile-applet"/>
         <value type="string" value="scp-dbus-service.py"/>
         <value type="string" value="thunderbird"/>
+        <value type="string" value="slack"/>
         <value type="string" value="swift-im"/>
         <value type="string" value="l2tpipsecvpn"/>
       </property>
