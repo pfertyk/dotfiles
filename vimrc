@@ -42,6 +42,14 @@ map <leader>l :set list!<cr>
 map <leader>s :SyntasticToggleMode<cr>
 map <leader>b oimport ipdb; ipdb.set_trace()<esc>
 map <leader>B Oimport ipdb; ipdb.set_trace()<esc>
+
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
 set list
 set listchars=tab:>-,trail:~
 
