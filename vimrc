@@ -33,7 +33,7 @@ let g:syntastic_enable_python_checker = 1
 
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 0
-map <c-k> :CtrlPLine<cr>
+map \ :CtrlPLine<cr>
 map <a-j> :m+1<cr>
 map <a-k> :m-2<cr>
 
