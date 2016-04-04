@@ -11,6 +11,7 @@ Plugin 'mgedmin/pythonhelper.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'fisadev/vim-isort'
+Plugin 'tpope/vim-abolish'
 call vundle#end()
 filetype plugin indent on
 
