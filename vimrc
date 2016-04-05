@@ -82,6 +82,7 @@ set viminfo^=%
 set hidden
 nnoremap / /\v
 vnoremap / /\v
+vnoremap // y/<c-r>"<cr>
 set ignorecase
 set smartcase
 set gdefault
