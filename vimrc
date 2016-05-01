@@ -91,3 +91,10 @@ set gdefault
 
 nnoremap j gj
 nnoremap k gk
+
+au VimLeave * call SaveVimProject()
+function! SaveVimProject()
+    if filereadable("./Project.vim")
+        mksession! Project.vim
+    endif
+endfunction
