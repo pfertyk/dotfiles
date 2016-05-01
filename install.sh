@@ -6,7 +6,6 @@ bashrc
 gitconfig
 git-prompt.sh
 inputrc
-jshintrc
 profile
 vim
 vimrc
