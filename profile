@@ -22,6 +22,7 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 export PATH="$PATH:~/.local/bin"
+export PATH="$PATH:~/node_modules/.bin"
 export LC_TIME="en_GB.UTF-8"
 
 xmodmap -e "clear Lock"

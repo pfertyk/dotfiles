@@ -31,8 +31,9 @@ set sessionoptions=blank,buffers,curdir,resize,winpos,winsize
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_jshint_exec = '~/node_modules/.bin/jshint'
+let g:syntastic_javascript_eslint_exec = '~/node_modules/.bin/eslint'
 
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 0
@@ -87,6 +88,7 @@ vnoremap / /\v
 vnoremap // y/<c-r>"<cr>
 set ignorecase
 set smartcase
+set smartindent
 set gdefault
 
 nnoremap j gj
