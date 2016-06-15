@@ -1,0 +1,21 @@
+clear Lock
+keycode 66 = Mode_switch
+
+!clear mod5
+keycode  64 = Alt_L Meta_L ISO_Level3_Shift
+keycode 108 = Alt_R Meta_R ISO_Level3_Shift
+
+keysym l = l L Right Right lstroke Lstroke
+keysym h = h H Left Left
+keysym j = j J Down Down
+keysym k = k K Up Up
+
+keysym n = n N Delete Delete nacute Nacute
+keysym m = m M BackSpace BackSpace m M
+
+keysym y = y Y Escape Escape Escape Escape
+
+keysym u = u U Prior Prior Prior Prior
+keysym i = i I Next Next Next Next
+keysym o = o O Home Home oacute Oacute
+keysym p = p P End End End End

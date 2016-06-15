@@ -25,37 +25,4 @@ export PATH="$PATH:~/.local/bin"
 export PATH="$PATH:~/node_modules/.bin"
 export LC_TIME="en_GB.UTF-8"
 
-xmodmap -e "clear Lock"
-xmodmap -e "keycode 0x42 = Mode_switch"
-# xmodmap -e "keycode 0x87 = Super_R"
-# xmodmap -e "keycode 0x7f = Mode_switch"
-# xmodmap -e "keycode 0x76 = BackSpace"
-xmodmap -e "keysym l = l L Right Right lstroke Lstroke"
-xmodmap -e "keysym h = h H Left Left"
-xmodmap -e "keysym j = j J Down Down"
-xmodmap -e "keysym k = k K Up Up"
-
-xmodmap -e "keysym n = n N Delete Delete nacute Nacute"
-xmodmap -e "keysym m = m M BackSpace BackSpace m M"
-
-xmodmap -e "keysym y = y Y Escape Escape Escape Escape"
-
-xmodmap -e "keysym u = u U Prior Prior Prior Prior"
-xmodmap -e "keysym i = i I Next Next Next Next"
-xmodmap -e "keysym o = o O Home Home oacute Oacute"
-xmodmap -e "keysym p = p P End End End End"
-
-xmodmap -e "keysym 1 = 1 exclam F1"
-xmodmap -e "keysym 2 = 2 at F2"
-xmodmap -e "keysym 3 = 3 numbersign F3"
-xmodmap -e "keysym 4 = 4 dollar F4"
-xmodmap -e "keysym 5 = 5 percent F5"
-xmodmap -e "keysym 6 = 6 asciicircum F6"
-xmodmap -e "keysym 7 = 7 ampersand F7"
-xmodmap -e "keysym 8 = 8 asterisk F8"
-xmodmap -e "keysym 9 = 9 parenleft F9"
-xmodmap -e "keysym 0 = 0 parenright F10"
-xmodmap -e "keysym minus = minus underscore F11"
-xmodmap -e "keysym equal = equal plus F12"
-
 xbindkeys &

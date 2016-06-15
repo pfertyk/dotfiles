@@ -13,6 +13,7 @@ config/quicktile.cfg
 config/xfce4/terminal
 config/xfce4/xfconf
 local/share/xfce4
+Xmodmap
 "
 
 echo "Creating $bck_dir for backup of any existing dotfiles"
