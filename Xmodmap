@@ -4,6 +4,7 @@ keycode 66 = Mode_switch
 !clear mod5
 !keycode  64 = Alt_L Meta_L ISO_Level3_Shift
 !keycode 108 = Alt_R Meta_R ISO_Level3_Shift
+keycode 135 = Super_R
 
 keysym l = l L Right Right lstroke Lstroke
 keysym h = h H Left Left
