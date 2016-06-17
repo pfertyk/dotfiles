@@ -1,6 +1,10 @@
 clear Lock
+clear mod1
+
 keycode 64 = Mode_switch
 keycode 66 = Alt_L Meta_L Alt_L Meta_L
+
+add mod1 = Alt_L Meta_L
 
 !clear mod5
 !keycode  64 = Alt_L Meta_L ISO_Level3_Shift
