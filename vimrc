@@ -41,6 +41,11 @@ let g:ctrlp_max_files=0
 map \ :CtrlPLine<cr>
 map <a-j> :m+1<cr>
 map <a-k> :m-2<cr>
+map <a-l> :res +1<cr>
+map <a-L> :res -1<cr>
+map <a-h> :vertical res +1<cr>
+map <a-H> :vertical res -1<cr>
+set guioptions-=m
 
 let mapleader = ' '
 map <leader>l :set list!<cr>
