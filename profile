@@ -25,4 +25,4 @@ export PATH="$PATH:~/.local/bin"
 export PATH="$PATH:~/node_modules/.bin"
 export LC_TIME="en_GB.UTF-8"
 
-xbindkeys &
+~/quicktile/quicktile.py --daemonize &
