@@ -15,6 +15,7 @@ Plugin 'tpope/vim-abolish'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'mattn/emmet-vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'rhysd/vim-crystal'
 call vundle#end()
 filetype plugin indent on
 
