@@ -20,12 +20,12 @@ call vundle#end()
 filetype plugin indent on
 
 set statusline=
-set statusline+=%t
-set statusline+=%m
+set statusline+=%t%m
 set statusline+=%{TagInStatusLine()}
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+set statusline+=%*%=
+set statusline+=%l:%c(%p%%)
 
 set sessionoptions=blank,buffers,curdir,resize,winpos,winsize
 
