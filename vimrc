@@ -41,6 +41,8 @@ let g:syntastic_javascript_eslint_exec = '~/node_modules/.bin/eslint'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_max_files=0
+let g:ctrlp_custom_ignore = { 'dir': '(__pycache__|node_modules)$' }
+
 map \ :CtrlPLine<cr>
 map <a-j> :m+1<cr>
 map <a-k> :m-2<cr>
