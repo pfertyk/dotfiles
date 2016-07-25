@@ -11,8 +11,8 @@ add mod1 = Alt_L Meta_L
 !keycode 108 = Alt_R Meta_R ISO_Level3_Shift
 keycode 135 = Super_R
 
-keysym l = l L Right End lstroke Lstroke
-keysym h = h H Left Home
+keysym l = l L Right Right lstroke Lstroke
+keysym h = h H Left Left
 keysym j = j J Down Next
 keysym k = k K Up Prior
 
