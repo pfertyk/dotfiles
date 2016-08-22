@@ -26,3 +26,4 @@ export PATH="$PATH:~/node_modules/.bin"
 export LC_TIME="en_GB.UTF-8"
 
 ~/quicktile/quicktile.py --daemonize &
+~/.local/bin/syncthing -no-browser &
