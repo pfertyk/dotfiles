@@ -56,8 +56,6 @@ set guioptions-=m
 let mapleader = ' '
 map <leader>l :set list!<cr>
 map <leader>s :SyntasticToggleMode<cr>
-map <leader>b oimport ipdb; ipdb.set_trace()<esc>
-map <leader>B Oimport ipdb; ipdb.set_trace()<esc>
 
 vmap <Leader>y "+y
 vmap <Leader>d "+d
@@ -105,6 +103,9 @@ set gdefault
 
 nnoremap j gj
 nnoremap k gk
+
+autocmd FileType python map <buffer> <leader>b oimport ipdb; ipdb.set_trace()<esc>
+autocmd FileType python map <buffer> <leader>B Oimport ipdb; ipdb.set_trace()<esc>
 
 au VimLeave * call SaveVimProject()
 function! SaveVimProject()
