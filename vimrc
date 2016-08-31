@@ -7,7 +7,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'python-rope/ropevim'
-"Plugin 'mgedmin/pythonhelper.vim'
+Plugin 'pfertyk/pythonhelper.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'fisadev/vim-isort'
@@ -22,7 +22,7 @@ filetype plugin indent on
 
 set statusline=
 set statusline+=%t%m
-"set statusline+=%{TagInStatusLine()}
+set statusline+=%{TagInStatusLine()}
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*%=
