@@ -75,11 +75,6 @@ set nu
 set hls
 set autoread
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-
 syntax enable
 set background=dark
 colorscheme gruvbox
@@ -104,8 +99,10 @@ set gdefault
 nnoremap j gj
 nnoremap k gk
 
-autocmd FileType python map <buffer> <leader>b oimport ipdb; ipdb.set_trace()<esc>
-autocmd FileType python map <buffer> <leader>B Oimport ipdb; ipdb.set_trace()<esc>
+au FileType python map <buffer> <leader>b oimport ipdb; ipdb.set_trace()<esc>
+au FileType python map <buffer> <leader>B Oimport ipdb; ipdb.set_trace()<esc>
+au FileType python setl ts=4 sw=4 sts=4 et
+au FileType htmldjango,html,css setl ts=2 sw=2 sts=2 et
 
 au VimLeave * call SaveVimProject()
 function! SaveVimProject()
