@@ -17,6 +17,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'mattn/emmet-vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'rhysd/vim-crystal'
+Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 filetype plugin indent on
 
@@ -102,7 +103,7 @@ nnoremap k gk
 au FileType python map <buffer> <leader>b oimport ipdb; ipdb.set_trace()<esc>
 au FileType python map <buffer> <leader>B Oimport ipdb; ipdb.set_trace()<esc>
 au FileType python setl ts=4 sw=4 sts=4 et
-au FileType htmldjango,html,css setl ts=2 sw=2 sts=2 et
+au FileType htmldjango,html,css,cucumber setl ts=2 sw=2 sts=2 et
 
 au VimLeave * call SaveVimProject()
 function! SaveVimProject()
