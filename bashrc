@@ -121,3 +121,9 @@ export TERM=xterm-256color
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+function lazygit() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
