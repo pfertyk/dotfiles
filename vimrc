@@ -18,6 +18,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'rhysd/vim-crystal'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'AndrewRadev/deleft.vim'
 call vundle#end()
 filetype plugin indent on
 
