@@ -38,8 +38,7 @@ let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_exec = 'python3'
 let g:syntastic_python_flake8_args = ['-m', 'flake8']
 let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_jshint_exec = '~/node_modules/.bin/jshint'
-let g:syntastic_javascript_eslint_exec = '~/node_modules/.bin/eslint'
+let g:syntastic_javascript_eslint_exec = 'eslint'
 
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 0
@@ -104,7 +103,7 @@ nnoremap k gk
 au FileType python map <buffer> <leader>b oimport ipdb; ipdb.set_trace()<esc>
 au FileType python map <buffer> <leader>B Oimport ipdb; ipdb.set_trace()<esc>
 au FileType python setl ts=4 sw=4 sts=4 et
-au FileType htmldjango,html,css,cucumber setl ts=2 sw=2 sts=2 et
+au FileType javascript,htmldjango,html,css,cucumber setl ts=2 sw=2 sts=2 et
 
 au VimLeave * call SaveVimProject()
 function! SaveVimProject()
