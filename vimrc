@@ -19,8 +19,14 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'rhysd/vim-crystal'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'AndrewRadev/deleft.vim'
+Plugin 'fatih/vim-go'
+Plugin 'morhetz/gruvbox'
 call vundle#end()
 filetype plugin indent on
+
+let mapleader = ' '
+
+set laststatus=2
 
 set statusline=
 set statusline+=%t%m
@@ -30,7 +36,9 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*%=
 set statusline+=%l:%c(%p%%)
 
-set sessionoptions=blank,buffers,curdir,resize,winpos,winsize
+set directory^=$HOME/.vim/swp//
+set viminfo^=%
+set hidden
 
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
@@ -40,23 +48,37 @@ let g:syntastic_python_flake8_args = ['-m', 'flake8']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint'
 
+map <leader>s :SyntasticToggleMode<cr>
+
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_max_files=0
 let g:ctrlp_custom_ignore = '__pycache__\|node_modules'
 
 map \ :CtrlPLine<cr>
-map <a-j> :m+1<cr>
-map <a-k> :m-2<cr>
+
 map <a-l> :res +1<cr>
 map <a-L> :res -1<cr>
 map <a-h> :vertical res +1<cr>
 map <a-H> :vertical res -1<cr>
-set guioptions-=m
 
-let mapleader = ' '
+map <a-j> :m+1<cr>
+map <a-k> :m-2<cr>
+
+set cursorline
+set colorcolumn=80
+set nu
+set autoread
+set guioptions-=m
+set shortmess+=I
+
+nnoremap j gj
+nnoremap k gk
+
+set list
+set listchars=tab:>-,trail:~
+
 map <leader>l :set list!<cr>
-map <leader>s :SyntasticToggleMode<cr>
 
 vmap <Leader>y "+y
 vmap <Leader>d "+d
@@ -65,45 +87,31 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
-set list
-set listchars=tab:>-,trail:~
-
-set colorcolumn=80
-
-set laststatus=2
-set cursorline
-set nu
-set hls
-set autoread
-
 syntax enable
 set background=dark
 colorscheme gruvbox
-set incsearch
-set shortmess+=I
 
 command! XmlPrettyPrint :%!xmllint --format -
 command! JsonPrettyPrint :%!python -m json.tool
 command! Bd :bp<bar>bd#
 
-set directory^=$HOME/.vim/swp//
-set viminfo^=%
-set hidden
 nnoremap / /\v
 vnoremap / /\v
 vnoremap // y/<c-r>"<cr>
 set ignorecase
 set smartcase
-set smartindent
 set gdefault
-
-nnoremap j gj
-nnoremap k gk
+set hls
+set incsearch
 
 au FileType python map <buffer> <leader>b oimport ipdb; ipdb.set_trace()<esc>
 au FileType python map <buffer> <leader>B Oimport ipdb; ipdb.set_trace()<esc>
 au FileType python setl ts=4 sw=4 sts=4 et
 au FileType javascript,htmldjango,html,css,cucumber setl ts=2 sw=2 sts=2 et
+
+set smartindent
+
+set sessionoptions=blank,buffers,curdir,resize,winpos,winsize
 
 au VimLeave * call SaveVimProject()
 function! SaveVimProject()
