@@ -47,6 +47,8 @@ let g:syntastic_python_flake8_exec = 'python3'
 let g:syntastic_python_flake8_args = ['-m', 'flake8']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint'
+let g:syntastic_go_checkers = ['gofmt']
+let g:syntastic_go_eslint_exec = 'gofmt'
 
 map <leader>s :SyntasticToggleMode<cr>
 
