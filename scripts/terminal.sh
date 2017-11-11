@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 function get_terminal_id()
 {
 	local terminal_id=-1
@@ -14,7 +13,6 @@ function get_terminal_id()
 	done <<< "$(wmctrl -l)"
 	echo $terminal_id
 }
-
 
 while read desktop_id desktop_status rest
 do
@@ -37,5 +35,12 @@ then
 	done
 	wmctrl -ir $terminal_id -b add,fullscreen
 else
-	wmctrl -ia $terminal_id
+	current_window_id=`xdotool getactivewindow`
+	terminal_id_decimal=`printf "%d" $terminal_id`
+	if [ $current_window_id == $terminal_id_decimal ]
+	then
+		xdotool windowminimize $terminal_id
+	else
+		wmctrl -ia $terminal_id
+	fi
 fi
