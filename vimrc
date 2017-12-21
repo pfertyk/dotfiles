@@ -72,6 +72,7 @@ set colorcolumn=80
 set nu
 set autoread
 set guioptions-=m
+set guioptions-=T
 set shortmess+=I
 
 nnoremap j gj

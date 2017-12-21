@@ -6,9 +6,6 @@ keycode 66 = Alt_L Meta_L Alt_L Meta_L
 
 add mod1 = Alt_L Meta_L
 
-!clear mod5
-!keycode  64 = Alt_L Meta_L ISO_Level3_Shift
-!keycode 108 = Alt_R Meta_R ISO_Level3_Shift
 keycode 135 = Super_R
 
 keysym l = l L Right Right lstroke Lstroke
@@ -20,8 +17,3 @@ keysym n = n N Delete Delete nacute Nacute
 keysym m = m M BackSpace BackSpace m M
 
 keysym y = y Y Escape Escape Escape Escape
-
-!keysym u = u U Prior Prior Prior Prior
-!keysym i = i I Next Next Next Next
-!keysym o = o O Home Home oacute Oacute
-!keysym p = p P End End End End
