@@ -42,12 +42,12 @@ terminal_id=`get_terminal_id $current_desktop`
 
 if [ $terminal_id == -1 ]
 then
-	exo-open --launch TerminalEmulator
+	gnome-terminal
 	while [ $terminal_id == -1 ]
 	do
 		terminal_id=`get_terminal_id $current_desktop`
 	done
-	wmctrl -ir $terminal_id -b add,fullscreen
+	wmctrl -ir $terminal_id -b add,maximized_vert,maximized_horz
 else
 	current_window_id=`xdotool getactivewindow`
 	terminal_id_decimal=`printf "%d" $terminal_id`

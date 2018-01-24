@@ -6,7 +6,7 @@
 [credential]
 	helper = cache
 [diff]
-	tool = meld
+	tool = vimdiff
 	compactionHeuristic = true
 [alias]
 	co = checkout
