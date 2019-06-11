@@ -21,7 +21,7 @@ function get_terminal_id()
 	local terminal_id=-1
 	while read process_id desktop_id class rest
 	do
-		if [ "$desktop_id" -eq "$1" ] && [[ "$class" == *"terminal"* ]]
+		if [ "$desktop_id" -eq "$1" ] && [[ "$class" =~ Tilix|terminal ]]
 		then
 			terminal_id=$process_id
 		fi

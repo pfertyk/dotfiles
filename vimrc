@@ -110,7 +110,8 @@ set incsearch
 au FileType python map <buffer> <leader>b oimport ipdb; ipdb.set_trace()<esc>
 au FileType python map <buffer> <leader>B Oimport ipdb; ipdb.set_trace()<esc>
 au FileType python setl ts=4 sw=4 sts=4 et
-au FileType javascript,htmldjango,html,css,scss,cucumber setl ts=2 sw=2 sts=2 et
+au FileType json setl ts=2 sw=2 sts=2 et
+au FileType javascript,htmldjango,html,css,scss,cucumber setl ts=4 sw=4 sts=4 et
 
 set smartindent
 
