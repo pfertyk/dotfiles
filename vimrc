@@ -21,6 +21,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'AndrewRadev/deleft.vim'
 Plugin 'fatih/vim-go'
 Plugin 'morhetz/gruvbox'
+Plugin 'calviken/vim-gdscript3'
 call vundle#end()
 filetype plugin indent on
 
