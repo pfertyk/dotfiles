@@ -9,10 +9,6 @@ inputrc
 profile
 vim
 vimrc
-config/quicktile.cfg
-config/xfce4/terminal
-config/xfce4/xfconf
-local/share/xfce4
 Xmodmap
 "
 
