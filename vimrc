@@ -22,10 +22,12 @@ Plugin 'AndrewRadev/deleft.vim'
 Plugin 'fatih/vim-go'
 Plugin 'morhetz/gruvbox'
 Plugin 'calviken/vim-gdscript3'
+Plugin 'rust-lang/rust.vim'
 call vundle#end()
 filetype plugin indent on
 
 let mapleader = ' '
+let maplocalleader = ','
 
 set laststatus=2
 
@@ -111,8 +113,23 @@ set incsearch
 au FileType python map <buffer> <leader>b oimport ipdb; ipdb.set_trace()<esc>
 au FileType python map <buffer> <leader>B Oimport ipdb; ipdb.set_trace()<esc>
 au FileType python setl ts=4 sw=4 sts=4 et
-au FileType json setl ts=2 sw=2 sts=2 et
-au FileType javascript,htmldjango,html,css,scss,cucumber setl ts=4 sw=4 sts=4 et
+au FileType sh,json,yml,yaml,javascript setl ts=2 sw=2 sts=2 et
+au FileType htmldjango,html,css,scss,cucumber setl ts=2 sw=2 sts=2 et
+
+" Custom .txt file syntax highlighting
+au BufRead,BufNewFile *.txt hi backlog guifg=cyan ctermfg=cyan
+au BufRead,BufNewFile *.txt hi pending guifg=yellow ctermfg=yellow
+au BufRead,BufNewFile *.txt hi roadmap guifg=darkcyan ctermfg=darkcyan
+au BufRead,BufNewFile *.txt hi waiting guifg=gray ctermfg=gray
+au BufRead,BufNewFile *.txt hi low guifg=green ctermfg=green
+au BufRead,BufNewFile *.txt hi deadline guifg=red ctermfg=red
+
+au BufRead,BufNewFile *.txt syn match backlog "\v^\@B .*$"
+au BufRead,BufNewFile *.txt syn match pending "\v^\@P .*$"
+au BufRead,BufNewFile *.txt syn match roadmap "\v^\@R .*$"
+au BufRead,BufNewFile *.txt syn match waiting "\v^\@W .*$"
+au BufRead,BufNewFile *.txt syn match low "\v^\@L .*$"
+au BufRead,BufNewFile *.txt syn match deadline "\v^\@D .*$"
 
 set smartindent
 
