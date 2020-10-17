@@ -3,13 +3,14 @@ dir=$PWD
 bck_dir="dotfiles_bck_$(date +%Y_%m_%d)"
 files="
 bashrc
-gitconfig
 git-prompt.sh
+gitconfig
 inputrc
 profile
 vim
 vimrc
 Xmodmap
+zshrc
 "
 
 echo "Creating $bck_dir for backup of any existing dotfiles"
