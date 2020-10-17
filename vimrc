@@ -100,6 +100,7 @@ colorscheme gruvbox
 command! XmlPrettyPrint :%!xmllint --format -
 command! JsonPrettyPrint :%!python -m json.tool
 command! Bd :bp<bar>bd#
+command! Term :terminal++curwin
 
 nnoremap / /\v
 vnoremap / /\v
