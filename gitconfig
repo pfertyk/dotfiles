@@ -16,3 +16,5 @@
 	unstage = reset HEAD --
 	last = log -1 HEAD
 	wdiff = diff --color-words
+[core]
+	quotepath = false
