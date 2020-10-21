@@ -1,8 +1,2 @@
 set editing-mode vi
-
-#$if mode=vi
-    #set keymap vi-insert
-    #"jk": vi-movement-mode
-#$endif
-
 set show-mode-in-prompt on
