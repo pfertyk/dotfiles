@@ -55,6 +55,7 @@ let g:syntastic_go_checkers = ['gofmt']
 let g:syntastic_go_eslint_exec = 'gofmt'
 
 map <leader>s :SyntasticToggleMode<cr>
+map <C-n> :NERDTreeToggle<cr>
 
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 0
