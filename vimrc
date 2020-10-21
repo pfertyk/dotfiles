@@ -23,6 +23,7 @@ Plugin 'fatih/vim-go'
 Plugin 'morhetz/gruvbox'
 Plugin 'calviken/vim-gdscript3'
 Plugin 'rust-lang/rust.vim'
+Plugin 'preservim/nerdtree'
 call vundle#end()
 filetype plugin indent on
 
