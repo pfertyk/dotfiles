@@ -3,6 +3,7 @@ dir=$PWD
 bck_dir="dotfiles_bck_$(date +%Y_%m_%d)"
 files="
 bashrc
+config/nvim/init.vim
 git-prompt.sh
 gitconfig
 inputrc
@@ -20,6 +21,7 @@ mkdir ~/$bck_dir
 for file in $files; do
     echo "Creating symlink to $file"
     mv ~/.$file ~/$bck_dir/
+    mkdir -p "$(dirname ~/.$file)"
     ln -s $dir/$file ~/.$file
 done
 
