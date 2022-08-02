@@ -13,6 +13,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'fisadev/vim-isort'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-speeddating'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'mattn/emmet-vim'
 Plugin 'editorconfig/editorconfig-vim'
@@ -25,6 +26,7 @@ Plugin 'calviken/vim-gdscript3'
 Plugin 'rust-lang/rust.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'jceb/vim-orgmode'
+Plugin 'chrisbra/unicode.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -65,6 +67,8 @@ let g:ctrlp_custom_ignore = '__pycache__\|node_modules'
 
 map \ :CtrlPLine<cr>
 
+let g:vim_isort_config_overrides = {'multi_line_output': 3}
+
 map <a-l> :res +1<cr>
 map <a-L> :res -1<cr>
 map <a-h> :vertical res +1<cr>
@@ -74,7 +78,6 @@ map <a-j> :m+1<cr>
 map <a-k> :m-2<cr>
 
 set cursorline
-set colorcolumn=80
 set nu
 set autoread
 set guioptions-=m
@@ -114,11 +117,16 @@ set gdefault
 set hls
 set incsearch
 
-au FileType python map <buffer> <leader>b oimport ipdb; ipdb.set_trace()<esc>
-au FileType python map <buffer> <leader>B Oimport ipdb; ipdb.set_trace()<esc>
-au FileType python setl ts=4 sw=4 sts=4 et
-au FileType sh,json,yml,yaml,javascript setl ts=2 sw=2 sts=2 et
-au FileType htmldjango,html,css,scss,cucumber setl ts=2 sw=2 sts=2 et
+au FileType python
+  \ map <buffer> <leader>b oimport ipdb; ipdb.set_trace()<esc>
+  \ map <buffer> <leader>B Oimport ipdb; ipdb.set_trace()<esc>
+  \ python setl ts=4 sw=4 sts=4 et
+  \ set foldmethod=indent
+  \ set autoindent
+  \ set colorcolumn=80
+au FileType sh,json,yml,yaml,javascript,tex,htmldjango,html,css,scss,cucumber
+  \ setl ts=2 sw=2 sts=2 et
+au FileType org setl tw=0
 
 " Custom .txt file syntax highlighting
 au BufRead,BufNewFile *.txt hi backlog guifg=cyan ctermfg=cyan
