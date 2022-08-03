@@ -126,7 +126,7 @@ au FileType python
   \ set colorcolumn=80
 au FileType sh,json,yml,yaml,javascript,tex,htmldjango,html,css,scss,cucumber
   \ setl ts=2 sw=2 sts=2 et
-au FileType org setl tw=0
+au FileType org setl tw=0 spell
 
 " Custom .txt file syntax highlighting
 au BufRead,BufNewFile *.txt hi backlog guifg=cyan ctermfg=cyan
