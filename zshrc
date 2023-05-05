@@ -97,3 +97,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+agenda() {grep -r :..`date --date=${1:-"today"} +%Y-%m-%d` -B 1 | grep -v org.tmp |  grep -o '\* .*' | grep -v DONE | sort | cat -n}
+unscheduled() {grep -rh "^\*" -A 1 TODO.org | paste -sd ";" | sed 's/*\+ [^*]*SCHEDULED: /;/g' | tr ';' '\n' | grep "^\*" | cat -n}
