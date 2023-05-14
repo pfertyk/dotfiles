@@ -97,5 +97,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte-2.91.sh
+fi
+
 agenda() {grep -r :..`date --date=${1:-"today"} +%Y-%m-%d` -B 1 | grep -v org.tmp |  grep -o '\* .*' | grep -v DONE | sort | cat -n}
 unscheduled() {grep -rh "^\*" -A 1 TODO.org | paste -sd ";" | sed 's/*\+ [^*]*SCHEDULED: /;/g' | tr ';' '\n' | grep "^\*" | cat -n}
