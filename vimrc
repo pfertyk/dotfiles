@@ -27,6 +27,7 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'jceb/vim-orgmode'
 Plugin 'chrisbra/unicode.vim'
+Plugin 'hashivim/vim-terraform'
 call vundle#end()
 filetype plugin indent on
 
@@ -68,6 +69,8 @@ let g:ctrlp_custom_ignore = '__pycache__\|node_modules'
 map \ :CtrlPLine<cr>
 
 let g:vim_isort_config_overrides = {'multi_line_output': 3}
+
+let g:org_tag_column=0
 
 map <a-l> :res +1<cr>
 map <a-L> :res -1<cr>
