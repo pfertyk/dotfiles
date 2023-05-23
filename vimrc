@@ -22,12 +22,13 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'AndrewRadev/deleft.vim'
 Plugin 'fatih/vim-go'
 Plugin 'morhetz/gruvbox'
-Plugin 'calviken/vim-gdscript3'
+Plugin 'quabug/vim-gdscript'
 Plugin 'rust-lang/rust.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'jceb/vim-orgmode'
 Plugin 'chrisbra/unicode.vim'
 Plugin 'hashivim/vim-terraform'
+Plugin 'sukima/xmledit'
 call vundle#end()
 filetype plugin indent on
 
