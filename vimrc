@@ -71,6 +71,7 @@ map \ :CtrlPLine<cr>
 let g:vim_isort_config_overrides = {'multi_line_output': 3}
 
 let g:org_tag_column=0
+let g:org_todo_keywords=['TODO', 'NEXT', '|', 'DONE']
 
 map <a-l> :res +1<cr>
 map <a-L> :res -1<cr>
