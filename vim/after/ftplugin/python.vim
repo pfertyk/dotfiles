@@ -3,4 +3,5 @@ map <buffer> <leader>B Oimport ipdb; ipdb.set_trace()<esc>
 setl ts=4 sw=4 sts=4 et
 set foldmethod=indent
 set autoindent
+set foldlevel=99
 set colorcolumn=80
