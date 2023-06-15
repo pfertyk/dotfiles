@@ -151,3 +151,8 @@ function! SaveVimProject()
         mksession! Project.vim
     endif
 endfunction
+
+" Load custom configuration
+if filereadable(expand("~/.customvimrc"))
+    source ~/.customvimrc
+endif
