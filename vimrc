@@ -122,13 +122,6 @@ set gdefault
 set hls
 set incsearch
 
-au FileType python
-  \ map <buffer> <leader>b oimport ipdb; ipdb.set_trace()<esc>
-  \ map <buffer> <leader>B Oimport ipdb; ipdb.set_trace()<esc>
-  \ python setl ts=4 sw=4 sts=4 et
-  \ set foldmethod=indent
-  \ set autoindent
-  \ set colorcolumn=80
 au FileType sh,json,yml,yaml,javascript,tex,htmldjango,html,css,scss,cucumber
   \ setl ts=2 sw=2 sts=2 et
 au FileType org setl tw=0 spell
