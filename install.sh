@@ -3,7 +3,6 @@ dir=$PWD
 bck_dir="dotfiles_bck_$(date +%Y_%m_%d)"
 files="
 bashrc
-config/nvim/init.vim
 git-prompt.sh
 gitconfig
 inputrc
