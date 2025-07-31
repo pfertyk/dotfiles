@@ -105,3 +105,5 @@ agenda() {grep -r :..`date --date=${1:-"today"} +%Y-%m-%d` -B 1 | grep -v org.tm
 unscheduled() {grep -rh "^\*" -A 1 TODO.org | paste -sd ";" | sed 's/*\+ [^*]*SCHEDULED: /;/g' | tr ';' '\n' | grep "^\*" | cat -n}
 challenges() {grep -rh "\[..%\] .*" | sort -r | grep -v :future: | cat -n}
 deadlines() {grep -r DEADLINE: -B 1 | grep -v org.tmp |  grep -o '\*\+ .*' | grep -v DONE | sort | cat -n}
+
+fj() {grep -rI "$1" "${@:2}" | grep -v i18n | grep -v node_modules | grep --color -e "$1" -e '^'}
